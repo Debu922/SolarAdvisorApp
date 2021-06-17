@@ -1,5 +1,8 @@
 ---
 applications:
- - name: solarAdvisor
-   random-route: true
-   memory: 128M
+  - name: SolarAdvisor
+memory: 64M
+path: build/
+buildpack: staticfile_buildpack 
+routes:
+  - route: saa.eu-gb.cf.appdomain.cloud
