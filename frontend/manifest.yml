@@ -1,0 +1,5 @@
+---
+applications:
+ - name: solarAdvisor
+   random-route: true
+   memory: 128M
