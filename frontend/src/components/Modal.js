@@ -40,37 +40,37 @@ export default class CustomModal extends Component {
                 <ModalBody>
                     <Form>
                         <FormGroup>
-                            <Label for="todo-title">Title</Label>
+                            <Label for="todo-title">Name</Label>
                             <Input
                                 type="text"
-                                id="todo-title"
-                                name="title"
-                                value={this.state.activeItem.title}
+                                id="city-name"
+                                name="name"
+                                value={this.state.activeItem.name}
                                 onChange={this.handleChange}
-                                placeholder="Enter Todo Title"
+                                placeholder="Enter City Name"
                             />
                         </FormGroup>
                         <FormGroup>
-                            <Label for="todo-description">Description</Label>
+                            <Label for="todo-description">Latitude</Label>
                             <Input
-                                type="text"
+                                type="number"
                                 id="todo-description"
-                                name="description"
-                                value={this.state.activeItem.description}
+                                name="lat"
+                                value={this.state.activeItem.lat}
                                 onChange={this.handleChange}
-                                placeholder="Enter Todo description"
+                                placeholder="Enter Latitude"
                             />
                         </FormGroup>
-                        <FormGroup check>
-                            <Label check>
-                                <Input
-                                    type="checkbox"
-                                    name="completed"
-                                    checked={this.state.activeItem.completed}
-                                    onChange={this.handleChange}
-                                />
-                                Completed
-                            </Label>
+                        <FormGroup>
+                            <Label for="todo-description">Longitude</Label>
+                            <Input
+                                type="number"
+                                id="todo-description"
+                                name="long"
+                                value={this.state.activeItem.long}
+                                onChange={this.handleChange}
+                                placeholder="Enter Longitude"
+                            />
                         </FormGroup>
                     </Form>
                 </ModalBody>
